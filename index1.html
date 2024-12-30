@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <style>
+        body{
+            background-color: green;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+        } 
+        .form-card {
+            background-color: azure;
+            padding:30px;
+            border-radius:15px;
+            width:50%;
+            max-height:2000px;
+        }   
+        .form-card h1{
+            text-align:center;
+            margin-bottom:10px;
+        }
+        .form-card input{
+            border:0.5px solid black;
+        }
+        .form-card button {
+                width: 20%;
+                padding: 10px;
+                background-color: darkgray;
+                border:1px solid green;
+                color: rgb(39, 18, 123);
+                font-size: 20px;
+                cursor:pointer;
+            }
+        .form-card button:hover{
+            background-color: orange;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="form-card">
+        <h1><center>Student Registration Form</center></h1><br><br>
+        <form>
+        <lable>First Name:</lable>
+        <input type="name" id="name" placeholder="First name" required><br><br>
+        <lable>Last Name:</lable>
+        <input type="name" id="name" placeholder="Last name" required><br><br>
+        <lable>Enail Id:</lable>
+        <input type="email" id="email" placeholder="Enter your email id" required><br><br>
+        <lable>Father Name:</lable>
+        <input type="name" id="name" placeholder="Enter your father name" required><br><br>
+        <lable>Mother Name:</lable>
+        <input type="name" id="name" placeholder="Enter your mother name" required><br><br>
+        <lable>Date of Birth:</lable>
+        <input type="date" required><br><br>
+        <lable>Age:</lable>
+        <input type="age" placeholder="Enter your age" required><br><br>
+        <lable>Select Your Gender:</lable>
+        <input type="radio" name="gender" size="" required>Male</input><input type="radio" name="gender" size="" required>Female</input><input type="radio" name="gender" size="" required>Others</input><br><br>
+        <lable>Student Id:</lable>
+        <input type="student id" placeholder="Enter your Id" required><br><br>
+        <lable>Branch:</lable>
+        <select name="course">
+            <option name="">--select--</option>
+            <option name="">ECE</option>
+            <option name="">CSE</option>
+            <option name="">CIVIL</option>
+            <option name="">MECH</option>
+            <option name="">IOT</option>
+        <required><br><br>
+        <lable>Mobile Number:</lable>
+        <input type="tel" placeholder="Enter Your Mobile Number" maxlength="10" required><br><br>
+        <lable>Hobbies:</lable>
+        <input type="checkbox" size="" required>Waching TV<input type="checkbox" size="" required>Gardening<input type="checkbox" size="" required>Playing Games<input type="checkbox" size="" required>Instagram<input type="checkbox" size="" required>Listening Music </input><br><br>
+        <lable>Address:</lable>
+        <input type="address" placeholder="Enter your address" required ><br><br>
+        <button type="submit">submit</button>
+        </form>
+        </div>
+    </body>
+</html>          
